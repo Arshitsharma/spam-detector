@@ -1,7 +1,7 @@
 {
     "builds": [
       {
-        "src": "spam_detection",
+        "src": "spam-detector",
         "use": "@vercel/python",
         "config": {
           "runtime": "python3.11"  
