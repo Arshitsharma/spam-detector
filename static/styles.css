@@ -17,6 +17,7 @@ body {
 
 p#features-typing-text {
     font-size: larger;
+    font-weight: bolder;
 }
 
 h2 {
@@ -230,7 +231,7 @@ footer .signature {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 60px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
     
 }
 #contact{
@@ -240,8 +241,8 @@ footer .signature {
     margin-top:60px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 80px;
-    backdrop-filter: blur(5px);
+    margin-bottom: 100px;
+    backdrop-filter: blur(15px);
 
 
 }
@@ -251,8 +252,8 @@ footer .signature {
 #contact h2 {
     margin-bottom: 20px;
     color: #ffffff;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: bolder;
 
 }
 
@@ -261,12 +262,12 @@ footer .signature {
 #contact .column {
     color: #ffffff;
     margin-bottom: 15px;
-    margin-left: 20px;
     
 }
 
 p#how-it-works-typing-text {
     font-size: larger;
+    font-weight: bolder;
 }
 
 
@@ -299,13 +300,14 @@ p#how-it-works-typing-text {
 #contact .column h3 {
     margin-bottom: 10px;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 25px
 }
 
 #contact .column p {
-    color: #666;
+    color: #ffffffa1;
     margin-bottom: 5px;
     font-weight: 600;
+    font-size: larger;
 }
 
 /* Typing Effect */
