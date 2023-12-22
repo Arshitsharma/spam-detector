@@ -80,29 +80,3 @@ function resetForm() {
     document.getElementById("message").value = ""; // Reset the textarea
     document.getElementById("prediction-result").innerText = ""; // Clear the prediction result
 }
-
-// script.js
-
-
-let header = document.getElementById("header");
-let hoveringAtTop = false;
-
-window.onscroll = function() {
-    let currentScrollPos = window.pageYOffset;
-
-    if (currentScrollPos > 50 && !hoveringAtTop) {
-        header.style.top = "-80px"; // Hide the header when not at the top and not hovering
-    } else {
-        header.style.top = "0"; // Show the header otherwise
-    }
-}
-
-header.addEventListener("mouseenter", function() {
-    hoveringAtTop = true;
-    header.style.top = "0"; // Show the header when hovering at the top
-});
-
-header.addEventListener("mouseleave", function() {
-    hoveringAtTop = false;
-    header.style.top = "-80px"; // Hide the header when not hovering
-});
