@@ -1,0 +1,100 @@
+<!-- about.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spam Detector</title>
+    <!-- Your head content -->
+    <link rel="stylesheet" href="{{ url_for('serve_static', path='styles.css') }}">
+    <script src="{{ url_for('serve_static', path='script.js') }}"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1>Spam Detector</h1>
+            
+            <nav>               
+                <ul>
+                    <li><a href="#check-messages">Check Messages</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset">dataset</a></li> 
+                    <!-- Add other navigation links as needed -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div id="check-messages" class="wrapper">
+        <div class="limit">
+          <h1>Spam Detector</h1>
+        </div>
+
+        <form id="prediction-form" onsubmit="showPrediction(event)">
+            <label for="message">Enter your message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Submit">
+            <input type="button" value="Reset" onclick="resetForm()" class="reset-button">
+        </form>
+    </div>
+    
+        <p id="prediction-result"></p>
+    </div>
+
+    <div class="card">
+        
+        <section id="about" class="additional-content">     
+            <h2>About the Spam Detector</h2>
+            <p id="about-typing-text"></p>
+        </section>
+
+        <section id="features" class="additional-content">
+            <h2>Features</h2>
+            <ul>
+              <!-- <li>Advanced spam detection algorithms</li>  
+                <li>Real-time analysis of messages</li>
+                <li>User-friendly interface</li>  -->
+
+                <!-- Add more features as needed -->
+
+            </ul>
+            <p id="features-typing-text"></p>
+        </section>
+
+        <section id="how-it-works" class="additional-content">
+           <h2>How It Works</h2>
+            <!--<p>The Spam Detector works by...</p>
+            <p>Explain the steps or processes involved in identifying spam messages using your tool.</p>-->
+            
+            <p id="how-it-works-typing-text"></p>
+        </section>
+   
+
+        <section id="contact" class="additional-content">
+            <h2>Contact</h2>
+            <div class="column-layout">
+                <div class="column">
+                    <h3>Email</h3>
+                    <p>arshitsharma2020@gmail.com</p>
+                </div>
+                <div class="column">
+                    <h3>Phone</h3>
+                    <p>+1234567890</p>
+                </div>
+                <!-- Add more contact details as needed -->
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        Made with <span class="heart-icon">❤️</span> by Arshit Sharma
+    </footer>
+</body>
+</html>

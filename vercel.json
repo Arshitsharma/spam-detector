@@ -1,0 +1,17 @@
+{
+    "builds": [
+      {
+        "src": "spam_detection",
+        "use": "@vercel/python",
+        "config": {
+          "runtime": "python3.11"  
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "spam_detection/template/$1"
+      }
+    ]
+  }
