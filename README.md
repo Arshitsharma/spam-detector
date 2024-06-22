@@ -2,9 +2,9 @@
 
 This project implements a web-based spam detector using Flask, a Python web framework, and a Multinomial Naive Bayes classifier from scikit-learn. The detector can classify messages as either "Spam" or "Not Spam" based on a trained dataset.
 
-## Demo
+## 🚀 Demo
 
-The project is currently deployed and can be accessed at [Spam Detector](https://render-spam-detectorflask.onrender.com/).
+The project is currently deployed and can be accessed at 🚀 [Spam Detector](https://render-spam-detectorflask.onrender.com/).
 
 ## Requirements
 
